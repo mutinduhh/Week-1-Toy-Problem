@@ -32,7 +32,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script > 
- // Prompting user for input
+  // Prompting user for input
 const prompt = require("prompt-sync")({ sigint: true });
 const basicSalary = parseFloat(prompt("Input monthly basic salary: "));
 const allowances = parseFloat(prompt("Input total allowance: "));
@@ -40,10 +40,10 @@ const allowances = parseFloat(prompt("Input total allowance: "));
 const taxableIncome = basicSalary + allowances;
 //creates the taxable bands for each category
 let band1 = Math.trunc(122298 * 0.1);
-let band2 = Math.trunc(23885 * 0.15);
-let band3 = Math.trunc(35472 * 0.2);
-let band4 = Math.trunc(47059 * 0.25);
-let band5 = Math.trunc((basicSalary - (122298 + 23886 + 35473 + 47059)) * 0.30);
+let band2 = Math.trunc(99000 * 0.15);
+let band3 = Math.trunc(5611999 * 0.2);
+let band4 = Math.trunc(3599999 * 0.25);
+let band5 = Math.trunc((basicSalary - (288000 + 99000 + 5611999 + 3599999)) * 0.35);
 
 //calculates the payee
 function paye() {
@@ -54,7 +54,7 @@ function paye() {
     if (taxableIncome > 47059) {return band5;}
 }
 //Calculates the gross salary
-let relief=2400;
+let relief=16896;
 const grossSalary=paye()-relief;
 
 //calculates NHIF deductions
