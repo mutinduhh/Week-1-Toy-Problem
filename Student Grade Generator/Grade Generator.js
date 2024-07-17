@@ -1,6 +1,6 @@
 function calculateGrade() {
-    var score = document.getElementById("score").value;
-    var grade;
+    let score = document.getElementById("score").value;
+    let grade;
 
     // Check if input is a valid number if value is not a number it loops back and you have to enter a proper value
     if (isNaN(score) || score < 0 || score > 100) {
@@ -21,3 +21,4 @@ function calculateGrade() {
     }
  // then once the work is done it is printed 
     document.getElementById("result").innerHTML = "Your grade is: " + grade;
+  }

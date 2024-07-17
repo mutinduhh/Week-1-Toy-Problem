@@ -1,17 +1,18 @@
 # Function
 Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
 ## How it works 
-The user inputs their, Gross Salary and Allowances and it used to calculate the PAYE and Net Salary
-Following these steps The PAYE is calculated
+The user inputs their, Payment Period (MOnthly,Annually), Gross Salary and Allowances
 Step 1. Gross Income = Basic salary + allowances + commissions
 Step 2. Taxable Income = Gross Income - all deductions/exemptions allowed by law e.g. NSSF, private pension
 Step 3. From Taxable Income on step 2, Calculate marginal taxes by multiplying the total amount of taxable income in each successive tax bracket by its tax rate.
 Step 4. Total PAYE tax = Sum of the marginal taxes from step 3
 Step 5. Tax Payable = Total PAYE - Total Relief e.g. Personal Relief, Insurance Relief
-And displays the Net Salary without showing the calculation
+And displays it as a pie chart with the majority being the net pay and minority the total tax
+The Values are as follows;
+PAYE
 ### Breakdown
   Here's how the code works:
-In summary, this HTML code creates a web page with a form that allows the user to input values for gross salary and Allowances, In the Background it calculates The results are displayed in right under the input field 
+In summary, this HTML code creates a web page with a form that allows the user to input values for gross salary and allowances then calculates the net pay and PAYE values based on the selected payment period. The results are displayed in a separate section of the page, along with a pie chart that visualizes the data.
 #### Website Refrences used
 https://www.aren.co.ke/calculators/deducalc.htm
 https://www.kra.go.ke/individual/calculate-tax/calculating-tax/paye
